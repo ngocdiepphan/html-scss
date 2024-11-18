@@ -1,0 +1,8 @@
+.container {
+  max-width: 768px;
+  // margin-inline: auto;
+
+  @include desktop {
+    max-width: 1920px;
+  }
+}

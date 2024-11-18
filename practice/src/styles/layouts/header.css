@@ -1,0 +1,7 @@
+.header {
+  background-color: var(--background-color-second);
+}
+.header__content {
+  padding-left: 240px;
+  padding-right: 240px;
+}/*# sourceMappingURL=header.css.map */

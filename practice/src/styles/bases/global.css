@@ -4,10 +4,10 @@
 }
 
 body {
+  background-color: var(--background-color-primary);
   font-size: 16px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 a {
@@ -17,5 +17,8 @@ a {
 html {
   font-size: 16px;
   height: 100%;
+  font-family: var(--font-primary);
   font-weight: 400;
+  color: var(--color-primary);
+  background-color: var(--background-color-primary);
 }/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,28 @@
+.btn {
+  border: none;
+  background-color: var(--btn-color-primary);
+  @include cursor;
+  color: var(--color-primary-transparency);
+
+  &:hover {
+    background-color: #f8981a;
+  }
+
+  &__contact {
+    width: 147px;
+    height: 47px;
+    border-radius: 4px;
+    font-weight: 600;
+    line-height: 1.03;
+
+    @include desktop {
+
+    }
+  }
+
+  &__more {
+    width: 160px;
+    height: 56px;
+    border-radius: 4px;
+  }
+}
