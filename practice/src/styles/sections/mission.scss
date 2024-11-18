@@ -1,0 +1,104 @@
+.mission {
+  @include flex-column;
+  align-items: center;
+
+  &__header {
+    @include flex-column;
+    align-items: center;
+    padding-top: 7px;
+    padding-left: 68px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__description {
+    max-width: 612px;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    align-items: center;
+    justify-content: space-between;
+    gap: 19px;
+    width: 100%;
+
+    padding-top: 60px;
+
+    @include desktop {
+      padding-left: 183px;
+      padding-right: 108px;
+      @include flex-row;
+    }
+  }
+
+  &__item {
+    padding-right: 23px;
+    height: 100px;
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    &:nth-child(odd) {
+      border-right: 1px solid #d2d5d9;
+    }
+
+    @include desktop {
+      width: 209px;
+      height: 100px;
+      border-right: 1px solid #d2d5d9;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    &:hover {
+      height: 189px;
+      background-color: var(--btn-color-secondary);
+      border-radius: 7px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      justify-content: space-evenly;
+      color: var(--color-primary-transparency);
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+
+  &__icon-maternity {
+    background-image: url("../assets/images/icons/mission/maternity.svg");
+    width: 73px;
+    height: 74px;
+  }
+
+  &__icon-plant {
+    background-image: url("../assets/images/icons/mission/tree.svg");
+    width: 65px;
+    height: 65px;
+  }
+
+  &__icon-agriculture {
+    background-image: url("../assets/images/icons/mission/agriculture.svg");
+    width: 65px;
+    height: 65px;
+  }
+
+  &__icon-tractor {
+    background-image: url("../assets/images/icons/mission/tractor.svg");
+    width: 80px;
+    height: 65px;
+  }
+
+  &__icon-crops {
+    background-image: url("../assets/images/icons/mission/crops.svg");
+    width: 65px;
+    height: 65px;
+  }
+}

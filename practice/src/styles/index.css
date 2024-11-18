@@ -209,7 +209,7 @@ html {
 }
 @media screen and (min-width: 1920px) {
   .header {
-    padding-left: 200px;
+    padding-left: 238px;
     padding-right: 240px;
     padding-bottom: 280px;
   }
@@ -302,6 +302,7 @@ html {
 .container {
   max-width: 768px;
   margin-inline: auto;
+  width: 100%;
 }
 @media screen and (min-width: 1920px) {
   .container {
@@ -317,7 +318,7 @@ html {
 @media screen and (min-width: 1920px) {
   .main-section {
     padding-top: 111px;
-    padding-left: 240px;
+    padding-left: 202px;
     padding-right: 279px;
   }
 }
@@ -377,8 +378,12 @@ html {
   .inspiration {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 70px;
+    gap: 60px;
   }
+}
+.inspiration__image {
+  display: flex;
+  justify-content: center;
 }
 .inspiration__header {
   display: flex;
@@ -389,14 +394,30 @@ html {
 .inspiration__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   padding-top: 18px;
   max-width: 593px;
+}
+@media screen and (min-width: 1920px) {
+  .inspiration__content {
+    align-items: flex-start;
+  }
+}
+.inspiration__text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+@media screen and (min-width: 1920px) {
+  .inspiration__text-container {
+    text-align: start;
+    align-items: flex-start;
+  }
 }
 .inspiration__subtitle {
   color: var(--color-highlight);
   letter-spacing: 12.5px;
-  line-height: 2.83;
   font-weight: 500;
   font-size: 20px;
   font-weight: 700;
@@ -410,19 +431,29 @@ html {
   font-weight: 700;
   font-size: 50px;
   line-height: 1.07;
+  text-transform: capitalize;
 }
 @media screen and (min-width: 1920px) {
   .inspiration__title {
-    font-size: 24px;
+    font-size: 56px;
+    padding-top: 5px;
   }
 }
 .inspiration__description {
   line-height: 1.62;
   margin-top: 33px;
 }
+@media screen and (min-width: 1920px) {
+  .inspiration__description {
+    max-width: 519px;
+  }
+}
 .inspiration__list {
   padding-top: 39px;
-  padding-bottom: 36px;
+  padding-bottom: 31px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .inspiration__item {
   display: flex;
@@ -442,6 +473,101 @@ html {
   background-image: url("../assets/images/icons/inspiration/tick.svg");
   width: 17px;
   height: 30px;
+}
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mission__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7px;
+  padding-left: 68px;
+}
+.mission__title {
+  text-align: center;
+}
+.mission__description {
+  max-width: 612px;
+  text-align: center;
+}
+.mission__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  gap: 19px;
+  width: 100%;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1920px) {
+  .mission__list {
+    padding-left: 183px;
+    padding-right: 108px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+.mission__item {
+  padding-right: 23px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.mission__item:nth-child(odd) {
+  border-right: 1px solid #d2d5d9;
+}
+@media screen and (min-width: 1920px) {
+  .mission__item {
+    width: 209px;
+    height: 100px;
+    border-right: 1px solid #d2d5d9;
+  }
+  .mission__item:last-child {
+    border-right: none;
+  }
+}
+.mission__item:hover {
+  height: 189px;
+  background-color: var(--btn-color-secondary);
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: space-evenly;
+  color: var(--color-primary-transparency);
+}
+.mission__text {
+  font-size: 14px;
+}
+.mission__icon-maternity {
+  background-image: url("../assets/images/icons/mission/maternity.svg");
+  width: 73px;
+  height: 74px;
+}
+.mission__icon-plant {
+  background-image: url("../assets/images/icons/mission/tree.svg");
+  width: 65px;
+  height: 65px;
+}
+.mission__icon-agriculture {
+  background-image: url("../assets/images/icons/mission/agriculture.svg");
+  width: 65px;
+  height: 65px;
+}
+.mission__icon-tractor {
+  background-image: url("../assets/images/icons/mission/tractor.svg");
+  width: 80px;
+  height: 65px;
+}
+.mission__icon-crops {
+  background-image: url("../assets/images/icons/mission/crops.svg");
+  width: 65px;
+  height: 65px;
 }
 
 .btn {
