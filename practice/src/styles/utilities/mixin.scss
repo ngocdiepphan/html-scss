@@ -1,29 +1,28 @@
 @mixin desktop {
-    @media screen and (min-width: 768px) { // Media query for desktop screens with min-width equal to 1920px
-      @content;
-    }
+  @media screen and (min-width: 1920px) { // Media query for desktop screens with min-width equal to 1920px
+    @content;
   }
-  
-  @mixin mobile {
-    @media screen and (max-width: 767.98px) { // Media query for mobile screens with min-width equal to 480px
-      @content;
-    }
+}
+
+@mixin mobile {
+  @media screen and (min-width: 768px) { // Media query for mobile screens with min-width equal to 480px
+    @content;
   }
-  
+}
+
   // Mixin for applying flexbox with column direction.
   @mixin flex-column {
     display: flex;
     flex-direction: column;
   }
-  
+
   // Mixin for applying flexbox with row direction.
   @mixin flex-row {
     display: flex;
     flex-direction: row;
   }
-  
+
   // // Mixin for setting cursor to pointer.
   @mixin cursor {
     cursor: pointer;
   }
-  

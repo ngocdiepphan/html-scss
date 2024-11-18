@@ -1,0 +1,11 @@
+.main-section {
+  padding-left: 140px;
+  padding-right: 179px;
+  padding-top: 90px;
+
+  @include desktop {
+    padding-top: 111px;
+    padding-left: 240px;
+    padding-right: 279px;
+  }
+}
