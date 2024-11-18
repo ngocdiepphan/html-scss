@@ -1,0 +1,29 @@
+:root {
+  /* Start color */
+  --color-primary-transparency: #fff;
+  --color-primary: #1f242e;
+  --color-second: #14212bcc;
+  --color-tertiary: #14212b;
+  --color-quaternary: #08151f;
+  --color-gray-light: #575757;
+  --color-highlight: #f5ab48;
+  --color-success: #54a029;
+  /* End color */
+  /* Start background */
+  --background-color-primary: #fff;
+  --background-color-second: #00000082;
+  --background-color-tertiary: #c4c4c4;
+  --background-color-accent: #54a02940;
+  /* End background */
+  /* Start color button */
+  --btn-color-primary: #f5ab48;
+  --btn-color-secondary: #54a029;
+  /* End color button */
+  /* Start font */
+  --font-primary: "DmSans";
+  --font-secondary: "Roboto";
+  /* End font */
+  /* Start border */
+  --border-primary: #7d7d7d;
+  /* End border */
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,34 @@
+// .header-section {
+//   @include flex-column;
+//   gap: 20px;
+//   margin-top: 50px;
+
+//   @include desktop {
+//     gap: 30px;
+//   }
+
+//   &__title {
+//     color: green;
+
+//     @include desktop {
+//       color: red;
+//       font-size: 18px;
+//     }
+//   }
+// }
+
+.ac {
+  @include flex-column;
+    gap: 20px;
+    margin-top: 50px;
+
+}
+
+.abc {
+  color: green;
+
+      @include desktop {
+      color: red;
+        font-size: 18px;
+     }
+}
