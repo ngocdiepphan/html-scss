@@ -1,0 +1,64 @@
+.contact-form {
+  background-color: #f8f4f6;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: fit-content;
+  padding: 40px;
+  cursor: pointer;
+
+  @include desktop {
+    width: 497px;
+    height: fit-content;
+    margin-left: 39px;
+  }
+
+  &__header {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 40px;
+    line-height: 1.46;
+    letter-spacing: 3px;
+
+    @include desktop {
+      font-size: 48px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__label {
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 7px;
+  }
+
+  &__input,
+  &__textarea {
+    background-color: var(--background-color-primary);
+    width: 100%;
+    padding: 10px 16px;
+    margin-bottom: 23px;
+    margin-top: 7px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+
+    &::placeholder {
+      line-height: 1.5;
+      color: #999;
+    }
+  }
+
+  &__input {
+    height: 55px;
+  }
+
+  &__textarea {
+    height: 120px;
+  }
+}

@@ -7,3 +7,13 @@
     max-width: 1920px;
   }
 }
+
+.container__content {
+  padding-left: 80px;
+  padding-right: 80px;
+
+  @include desktop {
+    padding-left: 202px;
+    padding-right: 279px;
+  }
+}

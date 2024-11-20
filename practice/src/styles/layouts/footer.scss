@@ -1,0 +1,189 @@
+.footer {
+  background-color: #0c1908;
+  color: var(--color-primary-transparency);
+  @include flex-column;
+  padding: 30px;
+  margin-top: 80px;
+
+  @include desktop {
+    padding-left: 382px;
+    padding-right: 355px;
+    padding-top: 129px;
+    padding-bottom: 31px;
+    margin-top: 126px;
+  }
+
+  &__wrapper {
+    @include flex-column;
+    gap: 40px;
+
+    @include desktop {
+      @include flex-row;
+      margin-bottom: 56px;
+      gap: 117px;
+    }
+  }
+
+  &__description {
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 18px;
+    margin-bottom: 33px;
+
+    @include desktop {
+      font-size: 16px;
+      max-width: 289px;
+    }
+  }
+
+  &__info-list {
+    @include flex-column;
+    gap: 30px;
+  }
+
+  &__info-item {
+    @include flex-row;
+    gap: 14px;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 1.33;
+    font-family: var(--font-primary);
+    margin-bottom: 17px;
+
+    @include desktop {
+      font-size: 24px;
+    }
+  }
+
+  &__item {
+    font-size: 14px;
+    line-height: 2.625;
+
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+
+  &__sections {
+    @include flex-row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    gap: 30px;
+
+    @include desktop {
+      @include flex-row;
+      gap: 149px;
+      flex-wrap: nowrap;
+      margin-bottom: 0;
+    }
+  }
+
+  &__post-list {
+    @include flex-column;
+    gap: 10px;
+    margin-top: 20px;
+
+    @include desktop {
+      margin-top: 33px;
+    }
+  }
+
+  &__post-item {
+    @include flex-row;
+    gap: 10px;
+  }
+
+  &__post-content {
+    @include flex-column;
+    gap: 4px;
+  }
+
+  &__post-date {
+    line-height: 1.3;
+    font-size: 12px;
+  }
+
+  &__post-title {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  &__post-icon {
+    width: 50px;
+    height: 40px;
+    background-color: var(--background-color-tertiary);
+
+    @include desktop {
+      width: 60px;
+      height: 50px;
+    }
+  }
+
+  &__icon-call {
+    background-image: url("../assets/images/icons/footer/call.svg");
+    width: 24px;
+    height: 24px;
+  }
+
+  &__icon-mail {
+    background-image: url("../assets/images/icons/footer/email.svg");
+  }
+
+  &__icon-location {
+    background-image: url("../assets/images/icons/footer/location_on.svg");
+  }
+
+  &__social {
+    padding-top: 28px;
+    border-top: 1px solid #747171;
+    @include flex-column;
+    gap: 30px;
+    @include cursor;
+
+    &:hover {
+      border-top: 2px solid #636262;
+    }
+
+    @include desktop {
+      @include flex-row;
+      gap: 0;
+      padding-right: 154px;
+      padding-left: 12px;
+      justify-content: space-between;
+    }
+
+    &__item {
+      @include flex-row;
+      gap: 19px;
+    }
+  }
+
+  &__item {
+    @include cursor;
+
+    &:hover {
+      width: fit-content;
+      border-bottom: 1px solid #747171;
+      color: #a19f9f;
+    }
+  }
+
+  &__icon-twitter {
+    background-image: url("../assets/images/icons/footer/twitter-logo.svg");
+    width: 16px;
+    height: 16px;
+  }
+
+  &__icon-facebook {
+    background-image: url("../assets/images/icons/footer/fb-logo.svg");
+  }
+
+  &__icon-google {
+    background-image: url("../assets/images/icons/footer/google-logo.svg");
+  }
+}

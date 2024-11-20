@@ -1,0 +1,165 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  @include desktop {
+    margin-top: 127px;
+  }
+
+  &__subtitle {
+    color: var(--color-second);
+    line-height: 1.62;
+    text-align: center;
+
+    @include desktop {
+      max-width: 500px;
+      text-align: start;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 58px;
+    @include flex-column;
+    gap: 30px;
+
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 96px;
+    }
+  }
+
+  &__right {
+    @include flex-column;
+  }
+
+  &__header {
+    text-transform: capitalize;
+
+    @include desktop {
+      max-width: 719px;
+      padding-left: 36px;
+    }
+  }
+
+  &__subtitle-header {
+    color: var(--color-highlight);
+    font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
+
+    @include desktop {
+      font-size: 24px;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    font-family: var(--font-secondary);
+    color: #8c8c8c;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtitle {
+    @include desktop {
+      font-size: 18px;
+    }
+  }
+
+  &__introduce {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    color: var(--color-primary-transparency);
+  }
+
+  &__icon-check {
+    background-image: url("../../assets/images/icons/check.svg");
+    width: 12px;
+    height: 30px;
+  }
+
+  &__image {
+    display: none;
+
+    @include desktop {
+      position: relative;
+      display: block;
+    }
+  }
+
+  &__list {
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    padding-top: 27px;
+
+    @include desktop {
+      align-items: flex-start;
+    }
+  }
+
+  &__large-rectangle-above {
+    width: 278px;
+    height: 203px;
+    background-color: var(--background-color-tertiary);
+    position: absolute;
+    border-radius: 10px;
+  }
+
+  &__large-rectangle-below {
+    width: 432px;
+    height: 237px;
+    background-color: var(--background-color-tertiary);
+    position: absolute;
+    border-radius: 10px;
+  }
+
+  &__large-rectangle-left {
+    top: 58px;
+    left: 0;
+  }
+
+  &__large-rectangle-right {
+    top: 120px;
+    left: 144px;
+  }
+
+  &__small-square-below {
+    width: 73px;
+    height: 70px;
+    position: absolute;
+    border-radius: 10px;
+  }
+
+  &__small-square-above {
+    width: 34px;
+    height: 33px;
+  }
+
+  &__small-square-green {
+    background-color: var(--btn-color-secondary);
+    top: 21px;
+    left: 317px;
+  }
+
+  &__small-square-yellow {
+    background-color: var(--btn-color-primary);
+    top: 11px;
+    left: 363px;
+  }
+}

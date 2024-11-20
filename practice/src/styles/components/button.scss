@@ -24,7 +24,7 @@
   &__more {
     width: 120px;
     height: 50px;
-    border-radius: 4px;
+    border-radius: 3px;
 
     @include desktop {
       width: 160px;
@@ -46,5 +46,36 @@
       width: 182px;
       height: 58px;
     }
+  }
+
+  &__view-detail {
+    width: 184px;
+    height: 58px;
+    border-radius: 3px;
+    margin-top: 22px;
+    @include flex-row;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  &__started {
+    border-radius: 8px;
+    margin-top: 37px;
+    width: 196px;
+    height: 59px;
+  }
+
+  &__discover {
+    width: 190px;
+    height: 60px;
+    border-radius: 8px;
+  }
+
+  &__send {
+    width: 130px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 12px;
   }
 }

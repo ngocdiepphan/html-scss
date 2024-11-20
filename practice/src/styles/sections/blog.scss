@@ -1,0 +1,116 @@
+.blog {
+  margin-top: 80px;
+
+  @include desktop {
+    margin-top: 103px;
+    padding-left: 372px;
+    padding-right: 370px;
+  }
+
+  &__list {
+    @include flex-column;
+    gap: 26px;
+    margin-top: 40px;
+
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 60px;
+    }
+  }
+
+  &__item {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &__image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 280px;
+    background-color: var(--background-color-tertiary);
+  }
+
+  &__content {
+    @include flex-column;
+    padding-left: 20px;
+    padding-bottom: 12px;
+  }
+
+  &__header {
+    @include desktop {
+      padding-left: 0;
+    }
+  }
+
+  &__wrapper {
+    @include desktop {
+      padding-left: 22px;
+    }
+  }
+
+  &__date {
+    color: var(--color-success);
+    line-height: 3.4;
+    font-weight: 600;
+
+    @include desktop {
+      font-size: 18px;
+    }
+  }
+
+  &__title {
+    color: var(--color-quaternary);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+    text-transform: capitalize;
+
+    @include desktop {
+      font-size: 24px;
+    }
+  }
+
+  &__description {
+    color: var(--color-second);
+    font-size: 14px;
+    line-height: 1.62;
+    margin-top: 10px;
+
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+
+  &__action {
+    @include flex-row;
+    gap: 7px;
+    align-items: center;
+    margin-top: 14px;
+  }
+
+  &__link {
+    font-weight: 700;
+    color: #27323b;
+    line-height: 3.85;
+  }
+
+  &__icon-wrapper {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 8px #54a02940;
+    background-color: var(--btn-color-secondary);
+    padding-top: 10px;
+    @include cursor;
+
+    @include desktop {
+      background-color: #44a30c;
+    }
+  }
+
+  &__icon-add {
+    background-image: url("../assets/images/icons/blog/add.svg");
+    width: 15x;
+    height: 15px;
+  }
+}

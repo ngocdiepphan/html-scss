@@ -1,0 +1,140 @@
+.testimonials {
+  margin-top: 80px;
+
+  @include desktop {
+    margin-top: 110px;
+  }
+
+  &__list {
+    @include flex-column;
+    gap: 30px;
+    margin-top: 44px;
+    margin-bottom: 49px;
+
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      padding-left: 61px;
+    }
+  }
+
+  &__title {
+    text-transform: none;
+    letter-spacing: 4.6px;
+
+    @include desktop {
+      max-width: 1020px;
+      padding-left: 193px;
+    }
+  }
+
+  &__wrapper {
+    padding-left: 0;
+  }
+
+  &__subtitle {
+    @include desktop {
+      font-size: 18px;
+    }
+  }
+
+  &__item {
+    border-radius: 6px;
+    border: 1px solid #acacac4a;
+    padding: 20px;
+    padding-bottom: 39px;
+    width: 100%;
+    height: fit-content;
+
+    @include desktop {
+      width: 556px;
+      height: 294px;
+      padding-left: 74px;
+      padding-top: 66px;
+    }
+  }
+
+  &__header {
+    @include flex-row;
+    gap: 15px;
+
+    @include desktop {
+      padding-left: 256px;
+    }
+  }
+
+  &__info {
+    @include flex-column;
+  }
+
+  &__name {
+    color: #1e1b1b;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+
+  &__location {
+    line-height: 1.62;
+    color: #939191;
+  }
+
+  &__text {
+    color: #6c757d;
+    max-width: 425px;
+    margin-top: 23px;
+    letter-spacing: 1px;
+    line-height: 1.62;
+  }
+
+  &__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    @include desktop {
+      padding-left: 75px;
+    }
+
+    &__item {
+      height: 4px;
+      width: 32px;
+      background-color: #54a02982;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: var(--color-success);
+      }
+    }
+  }
+
+  &__action {
+    @include flex-row;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    @include desktop {
+      margin-top: 0;
+      padding-right: 94px;
+      justify-content: flex-end;
+    }
+  }
+
+  &__icon-arrow-left {
+    background-image: url("../assets/images/icons/testimonials/arrow-left.svg");
+    width: 48px;
+    height: 48px;
+    @include cursor;
+  }
+
+  &__icon-arrow-right {
+    background-image: url("../assets/images/icons/testimonials/arrow-right.svg");
+    width: 60px;
+    height: 60px;
+    @include cursor;
+  }
+}
